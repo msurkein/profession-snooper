@@ -53,3 +53,4 @@ luac.out
 # Ignore Saved Variables folder with symlinks
 /_SV
 dev/release.sh
+release.sh
