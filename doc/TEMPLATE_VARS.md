@@ -1,7 +1,7 @@
 ## Template Variables
 
 #### ProfessionSnooper
->The addon name. Example:  ActionbarPlus
+>The addon name. Example:  ProfessionSnooper
 
 #### {{Addon-Short-Description}}
 >A short Description.
