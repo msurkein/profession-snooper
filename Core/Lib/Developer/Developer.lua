@@ -22,7 +22,7 @@ local function PropsAndMethods(o)
     function o:Info()
         return print(ns.GC():GetAddonInfoFormatted())
     end
-    -- /run DEV_ADS:dump('ADT')
+    -- /run DEV_ADS:dump('PS')
     ---@param arg string
     function o:dump(arg)
         ns.dump(arg)

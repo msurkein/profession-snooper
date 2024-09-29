@@ -19,12 +19,12 @@ local addon = ns.addon
 
 local kch = ns.Kapresoft_LibUtil.CH
 
-local addonShortName             = 'ADT'
-local consoleCommand             = "addon-template"
-local consoleCommandShort        = "adt"
+local addonShortName             = 'PS'
+local consoleCommand             = "profession-snooper"
+local consoleCommandShort        = "ps"
 local consoleCommandOptions      = consoleCommand .. '-options'
 local consoleCommandOptionsShort = consoleCommandShort .. '-options'
-local globalVarName              = "ADT"
+local globalVarName              = "PS"
 local useShortName               = false
 
 local globalVarPrefix            = globalVarName .. "_"

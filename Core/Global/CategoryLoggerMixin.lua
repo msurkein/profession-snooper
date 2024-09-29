@@ -20,22 +20,22 @@ Support Functions
 --- @param key string|nil Category name
 --- @return table<string, string>
 local function __GetCategories(key, val)
-    if key then ADT_DEBUG_ENABLED_CATEGORIES[key] = val end
-    return ADT_DEBUG_ENABLED_CATEGORIES or {}
+    if key then PS_DEBUG_ENABLED_CATEGORIES[key] = val end
+    return PS_DEBUG_ENABLED_CATEGORIES or {}
 end
 
 --- @param key string The category key
 --- @return Enabled
 local function __IsEnabledCategory(key)
-    ADT_DEBUG_ENABLED_CATEGORIES = ADT_DEBUG_ENABLED_CATEGORIES or {}
-    return ADT_DEBUG_ENABLED_CATEGORIES[key]
+    PS_DEBUG_ENABLED_CATEGORIES = PS_DEBUG_ENABLED_CATEGORIES or {}
+    return PS_DEBUG_ENABLED_CATEGORIES[key]
 end
 
 --- @param val number|nil Optional log level to set
 --- @return number The new log level passed back
 local function __GetLogLevel(val)
-    if val then ADT_LOG_LEVEL = val end
-    return ADT_LOG_LEVEL or 0
+    if val then PS_LOG_LEVEL = val end
+    return PS_LOG_LEVEL or 0
 end
 
 --[[-----------------------------------------------------------------------------

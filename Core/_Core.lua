@@ -15,7 +15,7 @@ addon, ns = ...; ns.addon = addon
 
 --- @deprecated Deprecated. Use ns.addon
 ns.name = addon
-ns.addonShortName = 'adt'
+ns.addonShortName = 'ps'
 ns.addonLogName   = string.upper(ns.addonShortName)
 
 local K = ns.Kapresoft_LibUtil

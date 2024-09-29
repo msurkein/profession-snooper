@@ -66,8 +66,8 @@ do
         --@do-not-package@
         if ns.debug:IsDeveloper() then
             p:a(c1('options (debug):'))
-            p:a(function() return C.CONSOLE_OPTIONS_FORMAT, 'dump', 'dump ADT' end)
-            p:a(function() return C.CONSOLE_OPTIONS_FORMAT, 'dumpns', 'dump ADT.ns()' end)
+            p:a(function() return C.CONSOLE_OPTIONS_FORMAT, 'dump', 'dump PS' end)
+            p:a(function() return C.CONSOLE_OPTIONS_FORMAT, 'dumpns', 'dump PS.ns()' end)
         end
         --@end-do-not-package@
     end
@@ -85,9 +85,9 @@ do
         end
         --@do-not-package@
         if IsAnyOf('dump', unpack(args)) then
-            return ns:K().dump('ADT')
+            return ns:K().dump('PS')
         elseif IsAnyOf('dumpns', unpack(args)) then
-            return ns:K().dump('ADT_NS')
+            return ns:K().dump('PS_NS')
         end
         --@end-do-not-package@
         self:SlashCommand_Help_Handler()
@@ -132,11 +132,11 @@ do
         C_Timer.After(0.01, function() dlg:SelectGroup(addon, tabName) end)
     end
 
-end; ADT = A
+end; PS = A
 
 --@do-not-package@
 if ns:IsDev() then
-    local addonVar = 'ADT'
+    local addonVar = 'PS'
     local varInfo = sformat('%s (%s)', addonVar, type(_G[addonVar]))
     p:a(function() return '%s var: %s', ns.addon, c1(varInfo) end)
 end

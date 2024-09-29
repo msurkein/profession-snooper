@@ -72,7 +72,7 @@ local function MethodsAndProps(o)
             return
         end
         --@end-do-not-package@
-        ADT_LOG_LEVEL = 0
+        PS_LOG_LEVEL = 0
     end
 
     function o:InitOptions()

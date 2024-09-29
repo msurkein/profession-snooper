@@ -8,14 +8,14 @@ local L         = LibStub("AceLocale-3.0"):GetLocale(addonName)
 local c1        = ns:K():cf(LIGHTBLUE_FONT_COLOR)
 
 -- General
-ADT_TITLE                          = addonName
-ADT_TITLE_SUFFIX_KEYB              = ns.sformat(c1(' (%s)'), addonName)
-ADT_CATEGORY                       = "AddOns/" .. ADT_TITLE
+PS_TITLE                          = addonName
+PS_TITLE_SUFFIX_KEYB              = ns.sformat(c1(' (%s)'), addonName)
+PS_CATEGORY                       = "AddOns/" .. PS_TITLE
 
 -- Key binding localization text
-BINDING_HEADER_ADT_OPTIONS         = ADT_TITLE
-BINDING_NAME_ADT_OPTIONS_DLG       = L["BINDING_NAME_ADT_OPTIONS_DLG"] .. ADT_TITLE_SUFFIX_KEYB
-BINDING_NAME_ADT_OPTIONS_DEBUG_DLG = L["BINDING_NAME_ADT_OPTIONS_DEBUG_DLG"] .. ADT_TITLE_SUFFIX_KEYB
+BINDING_HEADER_PS_OPTIONS         = PS_TITLE
+BINDING_NAME_PS_OPTIONS_DLG       = L["BINDING_NAME_PS_OPTIONS_DLG"] .. PS_TITLE_SUFFIX_KEYB
+BINDING_NAME_PS_OPTIONS_DEBUG_DLG = L["BINDING_NAME_PS_OPTIONS_DEBUG_DLG"] .. PS_TITLE_SUFFIX_KEYB
 
 --[[-----------------------------------------------------------------------------
 Methods

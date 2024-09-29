@@ -9,8 +9,8 @@ local L = LibStub("AceLocale-3.0"):NewLocale(addonName, "enUS", true);
 
 -- HEIRLOOM_BLUE_COLOR: |cff00ccff    Usage:  |cff00ccffHello|r
 
-L["BINDING_NAME_ADT_OPTIONS_DLG"]       = 'Options Dialog'
-L["BINDING_NAME_ADT_OPTIONS_DEBUG_DLG"] = 'Options Dialog::Debugging'
+L["BINDING_NAME_PS_OPTIONS_DLG"]       = 'Options Dialog'
+L["BINDING_NAME_PS_OPTIONS_DEBUG_DLG"] = 'Options Dialog::Debugging'
 
 L['Global Setting']               = true
 L['Character Setting']            = true

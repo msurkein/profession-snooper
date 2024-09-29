@@ -4,8 +4,8 @@
 ## Notes: {{Addon-Short-Description}}
 ## Author: wow-addon@surkein.com
 ## DefaultState: enabled
-## SavedVariables: ADT_DB, ADT_LOG_LEVEL, ADT_DEBUG_MODE, ADT_DEBUG_ENABLED_CATEGORIES
-## SavedVariablesPerCharacter: ADT_CHARACTER_DB
+## SavedVariables: PS_DB, PS_LOG_LEVEL, PS_DEBUG_MODE, PS_DEBUG_ENABLED_CATEGORIES
+## SavedVariablesPerCharacter: PS_CHARACTER_DB
 ## LoadManagers: AddonLoader
 
 ## X-LoadOn-Always: delayed

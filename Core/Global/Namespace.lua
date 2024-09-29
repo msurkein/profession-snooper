@@ -32,21 +32,21 @@ Global Variables: Replace with Addon-specific global vars
 --- @param key string|nil Category name
 --- @return table<string, string>
 local function __GetCategories(key, val)
-    if key then ADT_DEBUG_ENABLED_CATEGORIES[key] = val end
-    return ADT_DEBUG_ENABLED_CATEGORIES or {}
+    if key then PS_DEBUG_ENABLED_CATEGORIES[key] = val end
+    return PS_DEBUG_ENABLED_CATEGORIES or {}
 end
 
 --- Get Enabled Category
 --- @param key string The category key
 local function __category(key)
-    ADT_DEBUG_ENABLED_CATEGORIES = ADT_DEBUG_ENABLED_CATEGORIES or {}
-    return ADT_DEBUG_ENABLED_CATEGORIES[key]
+    PS_DEBUG_ENABLED_CATEGORIES = PS_DEBUG_ENABLED_CATEGORIES or {}
+    return PS_DEBUG_ENABLED_CATEGORIES[key]
 end
 --- @param val number|nil Optional log level to set
 --- @return number The new log level passed back
 local function __GetLogLevel(val)
-    if val then ADT_LOG_LEVEL = val end
-    return ADT_LOG_LEVEL or 0
+    if val then PS_LOG_LEVEL = val end
+    return PS_LOG_LEVEL or 0
 end
 
 --[[-----------------------------------------------------------------------------
@@ -229,12 +229,12 @@ local function CreateNamespace(...)
 end
 
 --- @type Namespace
-ADT_NS = CreateNamespace(...)
+PS_NS = CreateNamespace(...)
 
 --@do-not-package@
 if kns.debug:IsDeveloper() then
-    local p = ADT_NS:CreateDefaultLogger('Ns')
+    local p = PS_NS:CreateDefaultLogger('Ns')
     p:a(function() return '%s Namespace is: %s', kns.addon,
-            c1(kns.sformat('ADT_NS (%s)', type(ADT_NS))) end)
+            c1(kns.sformat('PS_NS (%s)', type(PS_NS))) end)
 end
 --@end-do-not-package@
