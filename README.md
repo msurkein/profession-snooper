@@ -1,5 +1,5 @@
 # Status: Experimental Mode
-## AddonTemplate : {{Addon-Short-Description}}
+## ProfessionSnooper : {{Addon-Short-Description}}
 
 ### Description
 {{Addon-Description}}

@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 env:
-  addonName: AddonTemplate
+  addonName: ProfessionSnooper
   curseForgeProjectId: 1111976
   releaseDir: ./.release
 
