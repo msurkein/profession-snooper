@@ -29,7 +29,7 @@ Support Functions
 --- ```Usage:
 --- AceEvent:RegisterMessage(MSG.OnAddonReady, function(evt, ...) end
 --- ```
---- @param addon AddonTemplate
+--- @param addon ProfessionSnooper
 local function SendAddonReadyMessage(addon) L:SendMessage(MSG.OnAddonReady, addon) end
 
 --- @param f MainControllerFrame
@@ -58,7 +58,7 @@ local function InstanceMethods(o)
     ---```
     ---local newInstance = Mixin:MixinAndInit(O.MainControllerMixin, addon)
     ---```
-    --- @param addon AddonTemplate
+    --- @param addon ProfessionSnooper
     function o:Init(addon)
         self.addon = addon
         self:RegisterMessage(MSG.OnAfterInitialize, function(evt, ...) self:OnAfterInitialize() end)
@@ -90,7 +90,7 @@ local function InstanceMethods(o)
     function o:CreateEventContext(eventFrame)
         --- @class MainEventContext
         --- @field frame MainControllerFrame
-        --- @field addon AddonTemplate
+        --- @field addon ProfessionSnooper
         local ctx = {
             frame = eventFrame,
             addon = self.addon,

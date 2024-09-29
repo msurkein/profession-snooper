@@ -9,7 +9,7 @@ on:
 
 env:
   addonName: AddonTemplate
-  curseForgeProjectId: 782096
+  curseForgeProjectId: 1111976
   uploadBuildArtifacts: true
   createDraftRelease: true
   artifact_retentionDays: 7

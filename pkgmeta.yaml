@@ -1,4 +1,4 @@
-package-as: AddonTemplate
+package-as: ProfessionSnooper
 # --------------------------
 license-output: LICENSE
 enable-nolib-creation: no

@@ -25,7 +25,7 @@ local function MethodsAndProps(o)
     local util = O.OptionsUtil:New(o)
 
     --- Called automatically by CreateAndInitFromMixin(..)
-    --- @param optionsMixin AddonTemplate
+    --- @param optionsMixin ProfessionSnooper
     function o:Init(optionsMixin)
         self.optionsMixin = optionsMixin
         self.util         = util

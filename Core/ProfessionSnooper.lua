@@ -17,7 +17,7 @@ local IsAnyOf, IsEmptyTable = String.IsAnyOf, Table.isEmpty
 local GENERAL_TAB           = 'general'
 local DEBUGGING_TAB         = 'debugging'
 
---- @class AddonTemplate
+--- @class ProfessionSnooper
 local A = LibStub("AceAddon-3.0"):NewAddon(addon, "AceConsole-3.0", "AceEvent-3.0", "AceHook-3.0")
 local mt = getmetatable(A) or {}; mt.__tostring = ns:ToStringFunction()
 local p = ns:CreateDefaultLogger(addon)

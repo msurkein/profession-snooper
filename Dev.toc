@@ -1,5 +1,5 @@
 ## Interface: 100002
-## Title: Dev
-## Author: kapresoft@gmail.com
+## Title: ProfessionSnooper
+## Author: Armando-Thrall
 
 Core\_Core.xml

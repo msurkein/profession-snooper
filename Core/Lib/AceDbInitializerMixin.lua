@@ -18,7 +18,7 @@ local p = ns:LC().DB:NewLogger(libName)
 --[[-----------------------------------------------------------------------------
 Methods
 -------------------------------------------------------------------------------]]
---- @param a AddonTemplate
+--- @param a ProfessionSnooper
 local function AddonCallbackMethods(a)
     function a:OnProfileChanged()
         p:f3('OnProfileChanged called...')
@@ -35,7 +35,7 @@ end
 local function PropsAndMethods(o)
 
     --- Called by CreateAndInitFromMixin(..) Automatically
-    --- @param addon AddonTemplate
+    --- @param addon ProfessionSnooper
     function o:Init(addon)
         self.addon = addon
         --- @type AddOn_DB
@@ -44,7 +44,7 @@ local function PropsAndMethods(o)
     end
 
     --- Usage:  local instance = AceDbInitializerMixin:New(addon)
-    --- @param addon AddonTemplate
+    --- @param addon ProfessionSnooper
     --- @return AceDbInitializerMixin
     function o:New(addon) return ns:K():CreateAndInitFromMixinWithDefExc(o, addon) end
 
