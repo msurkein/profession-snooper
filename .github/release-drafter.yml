@@ -9,7 +9,7 @@ tag-template: '$RESOLVED_VERSION'
 #
 template: |
   ### ProfessionSnooper $RESOLVED_VERSION
-  [Release Notes](https://github.com/kapresoft/$REPOSITORY/releases/tag/$RESOLVED_VERSION) | [Full Changelog](https://github.com/kapresoft/$REPOSITORY/compare/$PREVIOUS_TAG...$RESOLVED_VERSION) | [Release Page](https://github.com/kapresoft/$REPOSITORY/releases)
+  [Release Notes](https://github.com/msurkein/$REPOSITORY/releases/tag/$RESOLVED_VERSION) | [Full Changelog](https://github.com/msurkein/$REPOSITORY/compare/$PREVIOUS_TAG...$RESOLVED_VERSION) | [Release Page](https://github.com/msurkein/$REPOSITORY/releases)
   
   #### What’s Changed
 
@@ -20,4 +20,4 @@ template: |
   
   #### Links:
 
-  - [Curse Forge](https://www.curseforge.com/wow/addons/addon-template/files) | [Curse Forge Legacy](https://legacy.curseforge.com/wow/addons/addon-template/files)
+  - [Curse Forge](https://www.curseforge.com/wow/addons/professionsnooper/files) | [Curse Forge Legacy](https://legacy.curseforge.com/wow/addons/professionsnooper/files)
